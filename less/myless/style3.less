@@ -1,0 +1,14 @@
+	/*========= 定义一个类 ===========*/
+				.roundedCorners(@radius:5px) {
+					-moz-border-radius: @radius;
+					-webkit-border-radius: @radius;
+					border-radius: @radius;
+				}
+				/*＝＝＝＝＝＝＝＝＝＝ 定义的类应用到另个一类中 ＝＝＝＝＝＝＝＝＝＝＝*/
+				#header {
+					.roundedCorners();
+				}
+				footer {
+					.roundedCorners(10px);
+				}
+			

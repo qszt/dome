@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+
+<!--使用link引入.less文件，注意将rel设为stylesheet/less:-->
+
+<link rel="stylesheet/less" type="text/css" href="myless/style.less" />
+<!--在本站下载less.js，将它引入页面的<head>元素中，像这样：-->
+
+<!--高级设置 set options before less.js script -->
+<script type="text/javascript">
+//高级设置 你可以引入less.js之前通过创建一个全局less对象的方式来指定参数，例如：
+    less = {
+        env: "development", // 或者"production"
+        async: false,       // 异步加载导入的文件
+        fileAsync: false,   // 使用文件协议访问页面时异步加载导入的文件
+        poll: 1000,         // 在监视模式下，每两次请求之间的时间间隔（ms）
+        functions: {},      // user functions, keyed by name
+        dumpLineNumbers: "comments", // 或者"mediaQuery"，或者"all"
+        relativeUrls: false,// 是否调整相对路径
+                            // 如果为false，则url已经是相对入口less文件的
+                            // entry less file
+        rootpath: ":/a.com/"// 添加到每个url开始处的路径
+    };
+</script>
+<script src="myjs/less-1.1.0.js" type="text/javascript"></script>
+
+
+
+
+</head>
+
+<body>
+<div id="header">header文件</div>
+<h2>华北平原</h2>
+</body>
+</html>
